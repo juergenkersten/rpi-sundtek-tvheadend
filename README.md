@@ -16,6 +16,7 @@ docker pull docker pull juergenkersten/rpi-sundtek-tvheadend:latest
 Notes:
 - We do NOT pass the sundtek adapter to the docker instance, because it is not installed on the host.
 - Do NOT install the sundtek driver on the host
+- Modify the `-v` lines to map to paths appropriate to you
 
 ```bash
 docker run \
