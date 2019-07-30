@@ -27,7 +27,6 @@ docker run \
 --net=bridge \
 -v /home/pi/recordings/:/recordings \
 -v /home/pi/config:/config \
--v /home/pi/picons/:/picons \
 -v /etc/localtime:/etc/localtime:ro \
 -p 9981:9981 \
 -p 9982:9982 \
@@ -63,9 +62,6 @@ git clone https://github.com/juergenkersten/rpi-sundtek-tvheadend.git
 cd rpi-sundtek-tvheadend
 docker build -t juergenkersten/rpi-sundtek-tvheadend .
 ```
-
-### Picons:
-https://github.com/picons/picons
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
