@@ -24,9 +24,9 @@ docker run \
 --restart=always \
 --privileged \
 --net=bridge \
--v /media/8tb.wd.red/recordings/:/recordings \
--v /home/docker/tvheadend/:/config \
--v /home/docker/picons/:/picons \
+-v /home/pi/recordings/:/recordings \
+-v /home/pi/:/config \
+-v /home/pi/picons/:/picons \
 -v /etc/localtime:/etc/localtime:ro \
 -p 9981:9981 \
 -p 9982:9982 \
