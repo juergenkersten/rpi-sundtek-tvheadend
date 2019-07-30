@@ -25,7 +25,7 @@ docker run \
 --privileged \
 --net=bridge \
 -v /home/pi/recordings/:/recordings \
--v /home/pi/:/config \
+-v /home/pi/config:/config \
 -v /home/pi/picons/:/picons \
 -v /etc/localtime:/etc/localtime:ro \
 -p 9981:9981 \
