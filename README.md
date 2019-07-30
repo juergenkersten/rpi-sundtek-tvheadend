@@ -1,27 +1,21 @@
 #### tvheadend-sundtek-docker
-:tv: docker container for tvheadend with sundtek dvb adapter
-
-[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/clemensvb/tvheadend-sundtek-docker/)
-
-
+Raspberry Pi based :tv: docker container for tvheadend with sundtek dvb adapter
 
 Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources.  
 
 [tvheadend.org](https://tvheadend.org/)
 
-The 'unstable' version of tvheadend is used. 
-15 Oct 2017: `Version 4.3-XXXX`
-
-Offical repository as source:   
-https://bintray.com/tvheadend/deb/tvheadend/
+The 'stable' version of tvheadend is used. 
 
 ### Pull
 ```bash
-docker pull docker pull clemensvb/tvheadend-sundtek-docker
+docker pull docker pull juergenkersten/rpi-sundtek-tvheadend:latest
 ```
 
 ### Run:
-It dont passes the sundtek adapter because it is not installed on the host.
+Notes:
+- We do NOT pass the sundtek adapter to the docker instance, because it is not installed on the host.
+- Do NOT install the sundtek driver on the host
 
 ```bash
 docker run \
@@ -36,7 +30,7 @@ docker run \
 -p 9981:9981 \
 -p 9982:9982 \
 --device=/dev/dvb/* \
--d tristanteu/tvheadend-sundtek-docker
+-d juergenkersten/rpi-sundtek-tvheadend
 ```
 
 ### Important Notice - First Start
@@ -45,9 +39,9 @@ Don't install sundtek driver on your host.
 ### Build
 ```bash
 
-git clone https://github.com/clemensvb/tvheadend-sundtek-docker.git
-cd tvheadend-sundtek-docker
-docker build -t clemensvb/tvheadend-sundtek-docker .
+git clone https://github.com/juergenkersten/rpi-sundtek-tvheadend.git
+cd rpi-sundtek-tvheadend
+docker build -t juergenkersten/rpi-sundtek-tvheadend .
 ```
 
 ### Picons:
