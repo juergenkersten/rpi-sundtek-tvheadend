@@ -1,4 +1,4 @@
-#### tvheadend-sundtek-docker
+## rpi-sundtek-tvheadend
 Raspberry Pi based :tv: docker container for tvheadend with sundtek dvb adapter
 
 Tvheadend is a TV streaming server and recorder for Linux, FreeBSD and Android supporting DVB-S, DVB-S2, DVB-C, DVB-T, ATSC, ISDB-T, IPTV, SAT>IP and HDHomeRun as input sources.  
