@@ -12,7 +12,7 @@ The 'stable' version of tvheadend is used.
 docker pull juergenkersten/rpi-sundtek-tvheadend:latest
 ```
 
-### Run:
+### First Run:
 Notes:
 - We do NOT pass the sundtek adapter to the docker instance, because it is not installed on the host.
 - Do NOT install the sundtek driver on the host
@@ -37,6 +37,24 @@ docker run \
 
 ### Important Notice - First Start
 Don't install sundtek driver on your host.
+
+### Further helpful docker commands
+
+See the state of your docker instance
+
+```docker ps```
+
+Stop the docker instance
+
+```docker stop tvheadend```
+
+Start the docker instance
+
+```docker start tvheadend```
+
+Check logs (to find errors)
+
+```docker logs tvheadend```
 
 ### Build
 ```bash
