@@ -46,7 +46,7 @@ docker build -t juergenkersten/rpi-sundtek-tvheadend .
 ```
 
 ### Picons:
-https://github.com/picons/picons-source
+https://github.com/picons/picons
 
 ## License
 See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
