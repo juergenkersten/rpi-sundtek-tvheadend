@@ -1,5 +1,6 @@
 FROM raspbian/stretch
-MAINTAINER clemensvb <cjvb@gmx.net>
+MAINTAINER juergenkersten <example@example.com>
+#forked from MAINTAINER clemensvb <cjvb@gmx.net>
 #forked from MAINTAINER firsttris <info@teufel-it.de>
 
 # master, unstable, testing, stable
